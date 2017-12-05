@@ -5,17 +5,18 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/StephenGrider/ReduxSimpleStarter.git"
+    "url": "git+ssh://git@github.com/sameerpallav/faster-youtube-react.git"
   },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "Inso",
-  "homepage": "https://github.com/StephenGrider/ReduxSimpleStarter#readme",
+  "homepage": "https://github.com/sameerpallav/faster-youtube-react",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",

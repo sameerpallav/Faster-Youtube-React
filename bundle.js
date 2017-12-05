@@ -21784,7 +21784,7 @@
 
 				var onVideoSearch = _lodash2.default.debounce(function (term) {
 					return _this2.onVideoSearch(term);
-				}, 1000);
+				}, 300);
 				return _react2.default.createElement(
 					'div',
 					null,
@@ -22891,7 +22891,7 @@
 				var video = this.props.video;
 				var videoId = video.id.videoId;
 
-				var url = "https://youtube.com/embed/" + videoId;
+				var url = "https://youtube.com/embed/" + videoId + "?autoplay=1&fullscreen=1";
 
 				return _react2.default.createElement(
 					"div",
@@ -22899,7 +22899,7 @@
 					_react2.default.createElement(
 						"div",
 						{ className: "embed-responsive embed-responsive-16by9" },
-						_react2.default.createElement("iframe", { className: "embed-responsive-item", src: url })
+						_react2.default.createElement("iframe", { className: "embed-responsive-item", src: url, allowFullScreen: true })
 					),
 					_react2.default.createElement(
 						"div",

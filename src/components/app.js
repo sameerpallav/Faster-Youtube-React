@@ -22,7 +22,7 @@ export default class App extends Component {
 	}
 
 	render() {
-		const onVideoSearch = _.debounce((term) => this.onVideoSearch(term), 1000);
+		const onVideoSearch = _.debounce((term) => this.onVideoSearch(term), 300);
 		return (
 		  <div>
 		  	<SearchBar onVideoSearch={onVideoSearch}/>
